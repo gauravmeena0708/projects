@@ -86,7 +86,7 @@ function searchByOffice() {
     if (officerQuery) {
         // If officer query is filled, filter by officer id
         filteredData = filteredData.filter(entry => 
-            entry.eid.toLowerCase().includes(officerQuery)
+            entry.name_office.toLowerCase().includes(officerQuery)
         );
     }
 
